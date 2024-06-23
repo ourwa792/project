@@ -1,0 +1,44 @@
+<%- include('../partial/head.ejs') %>
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 5.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+    </head>
+
+
+    <body class="text-center">
+
+        <main class="form-signin">
+            <form action="/login" method="post">
+
+                <h1 class="h3 mb-3 fw-normal"> Log-in  </h1>
+
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" >
+                    <label for="floatingInput">البريد الالكتروني</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword">
+                    <label for="floatingPassword">كلمة المرور</label>
+                </div>
+                <button class="w-100 btn btn-lg btn-success" type="submit">Login</button>
+            </form>
+        </main>
+
+    <%- include('../partial/end.ejs') %>

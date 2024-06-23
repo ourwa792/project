@@ -1,0 +1,35 @@
+{
+  "name": "ourwa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "div": "nodemon ./server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sentry/node": "^8.11.0",
+    "@sentry/profiling-node": "^8.11.0",
+    "bcryptjs": "^2.4.3",
+    "cli": "^1.0.1",
+    "connect-flash": "^0.1.1",
+    "connect-session-sequelize": "^7.1.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-async-handler": "^1.2.0",
+    "express-session": "^1.18.0",
+    "express-validator": "^7.1.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.10.0",
+    "sequelize": "^6.37.3"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.2",
+    "sequelize-cli": "^6.6.2"
+  }
+}

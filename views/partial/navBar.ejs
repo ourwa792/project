@@ -1,0 +1,83 @@
+<header>
+  <div class="px-3 py-2 bg-success text-white mt-3 border rounded-3">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+          <li>
+            <a href="/" class="nav-link text-white">
+              الرئيسية
+            </a>
+          </li>  
+          
+          <% if (isAuthenticated) { %>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                <use xlink:href="#speedometer2" />
+              </svg>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                <use xlink:href="#table" />
+              </svg>
+              اختبر نفسك
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                <use xlink:href="#grid" />
+              </svg>
+              جلسات مصورة
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                <use xlink:href="#people-circle" />
+              </svg>
+              مصادر تعليمية واوراق عمل
+            </a>
+          </li>
+          <li>
+            <a href="" class="nav-link text-white">
+              <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                <use xlink:href="#people-circle" />
+              </svg>
+              أسأل سؤالك
+            </a>
+          </li>
+        </ul>
+        <% } console.log(isAuthenticated) %>
+      </div>
+    </div>
+  </div>
+  <div class="px-3 py-2 border rounded-3 my-3 border border-secondary">
+    <div class="container d-flex flex-wrap justify-content-center ">
+      <form action="" class="d-flex col-lg-auto mb-2 mb-lg-0 me-lg-auto ">
+        <input type="search" class=" form-control me-2" placeholder="Search..." aria-label="Search">
+        <button type="submit" class=" btn btn-light text-dark me-2">تصفية</button>
+      </form>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+
+      <div class="text-end">
+        <button class="btn btn-light text-dark me-2"><a class="nav-link" href="/login">Login</a></button>
+        <button class="btn btn-outline-success"><a class="nav-link" href="/signup">Sign-up</a></button>
+      </div>
+    </div>
+  </div>
+</header>
